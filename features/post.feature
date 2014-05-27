@@ -1,10 +1,10 @@
-Feature: Instagram post page
+Feature: Instagram post page (which is the same thing as the homepage)
 	In order share photos on instagram
 	As a user
 	I want to post a photos and videos
 
-Scenario: visiting the home page for the first time
-	When I visit the homepage
+Scenario: visiting the posts page for the first time
+	When I visit the posts page
 	And I am already signed in
 	Then I should see "There are no posts yet"
 
