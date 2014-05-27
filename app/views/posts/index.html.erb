@@ -1,7 +1,13 @@
 <h1>Posts Page</h1>
  
  <% if @posts.any? %>
- 
+  	<ul>
+ 	<% @posts.each do |post| %>
+	 		<li> <%= post.caption %> </li>
+	 	<%end%>
+	 	</ul>
+<%end%>
+
 
 <ul>
 	<li>There are no posts yet</li>
