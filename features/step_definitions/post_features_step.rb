@@ -13,8 +13,8 @@ end
 
 #---
 
-Then(/^I should find button "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then(/^I should find button "(.*?)"$/) do |button_name|
+  expect(page).to have_button(button_name)
 end
 
 

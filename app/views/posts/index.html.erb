@@ -6,12 +6,10 @@
 	 		<li> <%= post.caption %> </li>
 	 	<%end%>
 	 	</ul>
+
+<%else%>
+	<p>There are no posts yet</p>
 <%end%>
-
-
-<ul>
-	<li>There are no posts yet</li>
-</ul>
 
 <%= link_to 'Edit profile', edit_user_registration_path%>
 <%= link_to "Logout", destroy_user_session_path, method: :delete%>
