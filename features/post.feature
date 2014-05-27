@@ -8,9 +8,9 @@ Scenario: visiting the posts page for the first time
 	And I visit the posts page
 	Then I should see "There are no posts yet"
 
-# Scenario: posting a photo for the first time (and not following anyone)
-# 	Given I visit the home page
-# 	And I haven't posted a photo before
-# 	And I am not following anyone
-# 	When I post a photo
-# 	Then I should see the photo on the home page
+Scenario: posting a photo for the first time (and not following anyone)
+	Given I visit the homepage
+	And I haven't posted a photo before
+	And I am not following anyone
+	When I post a photo
+	Then I should see the photo on the home page
