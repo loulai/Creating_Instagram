@@ -9,7 +9,8 @@ Scenario: visiting the posts page for the first time
 	Then I should see "There are no posts yet"
 
 Scenario: posting a photo for the first time (and not following anyone)
-	Given I visit the homepage
+	Given I am already signed in
+	And I visit the homepage
 	And I haven't posted a photo before
 	And I am not following anyone
 	When I post a photo
