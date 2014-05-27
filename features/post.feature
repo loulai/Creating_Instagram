@@ -5,6 +5,7 @@ Feature: Instagram post page
 
 Scenario: visiting the home page for the first time
 	When I visit the homepage
+	And I am already signed in
 	Then I should see "There are no posts yet"
 
 # Scenario: posting a photo for the first time (and not following anyone)
