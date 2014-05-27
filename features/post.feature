@@ -4,8 +4,8 @@ Feature: Instagram post page (which is the same thing as the homepage)
 	I want to post a photos and videos
 
 Scenario: visiting the posts page for the first time
-	When I visit the posts page
-	And I am already signed in
+	When I am already signed in
+	And I visit the posts page
 	Then I should see "There are no posts yet"
 
 # Scenario: posting a photo for the first time (and not following anyone)

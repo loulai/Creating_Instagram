@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
-	before_action :authenticate_user!, except: [:index]
-  def index
-  	
+	before_action :authenticate_user!
+  def posts
   end
 end
