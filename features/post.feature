@@ -19,3 +19,5 @@ Scenario: clicking the link so I can make a new post
 	When I click "Create a Post"
 	Then I should see a "Create Post" button
 
+
+
