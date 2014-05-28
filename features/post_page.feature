@@ -3,19 +3,14 @@ Feature: Instagram post page (which is the same thing as the homepage)
 	As a user
 	I want to have a working "posts" page
 
+Background: I am already signed in on the "posts" page (also known as homepage)
+	When I sign in with the sign in form
+	Then I should be on the "posts" page
+
 Scenario: visiting the posts page for the first time
-	When I am already signed in
-	And I visit the "posts" page
 	Then I should see "There are no posts yet"
 
 Scenario: finding link to post a photo
-	Given I am already signed in
-	And I visit the homepage
-	Then I should find link "Create a Post"
-
-Scenario: clicking the link so I can make a new post
-	Given I am already signed in
-	When I visit the "posts" page
 	Then I should find link "Create a Post"
 
 
