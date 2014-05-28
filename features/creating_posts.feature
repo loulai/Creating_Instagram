@@ -22,6 +22,7 @@ Scenario: posting an actual photo
 	And I attach a photo
 	And I click "Create Post"
 	Then I should be on the "posts" page
+	And I should see my photo
 	And I should see "look at these pretty flowers"
 
 
