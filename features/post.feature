@@ -12,3 +12,4 @@ Scenario: finding link to post a photo
 	Given I am already signed in
 	And I visit the homepage
 	Then I should find link "Create a Post"
+
