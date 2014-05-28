@@ -16,6 +16,6 @@ Scenario: finding link to post a photo
 Scenario: clicking the link so I can make a new post
 	Given I am already signed in
 	And I visit the "posts" page
-	When I click the link "Create a Post"
-	Then I should see a "Upload File" button
+	When I click "Create a Post"
+	Then I should see a "Create Post" button
 

@@ -38,7 +38,11 @@ When(/^I click the link "(.*?)"$/) do |link_name|
 end
 
 Then(/^I should see a "(.*?)" button$/) do |button_name|
-  click_button(button_name)
+  expect(page).to have_button(button_name)
+end
+
+When(/^I click "(.*?)"$/) do |clicky_name|
+  click_on(clicky_name)
 end
 
 
