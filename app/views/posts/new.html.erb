@@ -1,9 +1,9 @@
-<%= form_for @post do |f| %>
-	<%= f.label :caption, "Caption:" %><br />
-	<%= f.text_area :caption %><br />
-
+<%= form_for @post, html: { multipart: true } do |f| %>
 	<%= f.label :picture %>
 	<%= f.file_field :picture %>
+
+	<%= f.label :caption, "Caption:" %><br />
+	<%= f.text_area :caption %><br />
 
 	<%= f.submit %>
 
