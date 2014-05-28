@@ -11,4 +11,4 @@ Scenario: visiting the posts page for the first time
 Scenario: finding link to post a photo
 	Given I am already signed in
 	And I visit the homepage
-	Then I should find button "Post Photo"
+	Then I should find link "Create a Post"

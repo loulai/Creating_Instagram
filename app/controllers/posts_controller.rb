@@ -5,6 +5,4 @@ class PostsController < ApplicationController
   	@posts = current_user.posts
   end
 
- 
-
 end
