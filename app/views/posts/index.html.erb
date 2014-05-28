@@ -1,7 +1,7 @@
 <div class="jumbotron">
-        <h1>Welcome to Instagram</h1>
-        <p class="lead">Boo ya</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        <h1>Instagram</h1>
+        <p class="lead">You are on the posts page, where you can view your own posts and of people you follow.</p>
+        <p><a class="btn btn-lg btn-success" href="posts/new" role="button">Post a Photo</a></p>
       </div>
  
  <% if @posts.any? %>
@@ -21,6 +21,5 @@
 
 <%= link_to 'Edit profile', edit_user_registration_path%>
 <%= link_to "Logout", destroy_user_session_path, method: :delete%>
-<%= link_to "Create a Post", new_post_path %>
 
 
