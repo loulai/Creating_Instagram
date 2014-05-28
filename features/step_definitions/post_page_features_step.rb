@@ -28,8 +28,11 @@ Then(/^I should find link "(.*?)"$/) do |link_name|
 end
 
 Given(/^I am already signed in$/) do
+  login_as the_user
+end
+
+def the_user
   user = User.create(email: 'alex@a.com', password: '12345678', password_confirmation: '12345678')
-  login_as user
 end
 
 #---
