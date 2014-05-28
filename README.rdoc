@@ -40,7 +40,7 @@ Intagration testing is done with cucumber.
 Timeline
 ---
 This is what my instagram looked like before I used bootstrap:
-[before_bootstrap]
+
 
 ![before_bootstrap](https://raw.githubusercontent.com/loulai/Creating_Instagram/master/README_images/unstyled_instagram.png)
 
