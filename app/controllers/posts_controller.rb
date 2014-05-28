@@ -5,4 +5,8 @@ class PostsController < ApplicationController
   	@posts = current_user.posts
   end
 
+  def new
+  	
+  end
+
 end

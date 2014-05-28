@@ -1,8 +1,7 @@
-Given(/^I visit the homepage$/) do
-  visit '/'
+
+
+Then(/^I should find text "(.*?)"$/) do |content|
+  expect(page).to have_content(content)
 end
 
-Then(/^I should find text "(.*?)"$/) do |arg1|
-  expect(page).to have_content()
-end
 
