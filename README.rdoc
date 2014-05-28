@@ -42,6 +42,6 @@ Timeline
 This is what my instagram looked like before I used bootstrap:
  
 
-![shot](README_images/unstyled_instagram.png)
+![](README_images/img/unstyled_instagram.png)
 
 
