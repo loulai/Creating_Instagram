@@ -18,15 +18,6 @@ Given(/^I am on the "(.*?)" page$/) do |page_name|
   expect(current_path).to eq("/#{page_name}")
 end
 
-When(/^I sign in with the sign in form$/) do
-  the_user
-  visit '/users/sign_in'
-  fill_in 'Email', with: 'alex@a.com'
-  fill_in 'Password', with: '12345678'
-  click_button 'Sign in'
-end
-
-
 #--- finding stuff
 
 Then(/^I should see "(.*?)"$/) do |string|
@@ -54,7 +45,8 @@ When(/^I click "(.*?)"$/) do |clicky_name|
   click_on(clicky_name)
 end
 
-#--- signed in
+
+#--- the user and logging in 
 
 Given(/^I am already signed in$/) do
   login_as the_user
@@ -64,6 +56,13 @@ def the_user
   user = User.create(email: 'alex@a.com', password: '12345678', password_confirmation: '12345678')
 end
 
+When(/^I sign in with the sign in form$/) do
+  the_user
+  visit '/users/sign_in'
+  fill_in 'Email', with: 'alex@a.com'
+  fill_in 'Password', with: '12345678'
+  click_button 'Sign in'
+end
 
 
 
