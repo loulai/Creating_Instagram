@@ -3,8 +3,9 @@
  <% if @posts.any? %>
   	<ul>
  	<% @posts.each do |post| %>
-	 		<li> <%= post.caption %> <br />
-	 				<%= image_tag post.picture.url, class: 'uploaded-picture' %>
+	 		<li> 
+	 			<%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %><br />
+	 			<%= post.caption %> 
 	 		</li>
 	 	<%end%>
 	 	</ul>
