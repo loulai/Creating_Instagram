@@ -5,6 +5,6 @@ When(/^I fill in the "(.*?)" area with "(.*?)"$/) do |area, stuff|
 end
 
 When(/^I attach a photo$/) do
-  attach_file("image", Rails.root.join("spec/images/alex_in_action.png"))
+  attach_file("Picture", Rails.root.join("spec/images/alex_in_action.png"))
 end
 
