@@ -24,16 +24,18 @@ Then(/^I should see "(.*?)"$/) do |string|
   expect(page).to have_content(string)
 end
 
-Then(/^I should see a "(.*?)" button$/) do |button_name|
-  expect(page).to have_button(button_name)
-end
-
 Then(/^I should find button "(.*?)"$/) do |button_name|
   expect(page).to have_button(button_name)
 end
 
 Then(/^I should find link "(.*?)"$/) do |link_name|
   expect(page).to have_link(link_name)
+end
+
+#--- stuff that shouldn't be there
+
+Then(/^I should not find "(.*?)"$/) do |thing|
+  expect(page).not_to have_content(thing)
 end
 
 #--- clicking stuff

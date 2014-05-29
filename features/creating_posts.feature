@@ -9,7 +9,7 @@ Background: user is already logged in and is on the create posts page
 
 Scenario: finding button to create post
 	Then I should see "Caption:"
-	And I should see a "Create Post" button
+	And I should find button "Create Post" 
 
 Scenario: posting a photo (well caption) #can take out after paperclip
 	When I fill in the "Caption" area with "amazing sunset, look!"
