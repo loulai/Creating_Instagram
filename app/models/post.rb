@@ -11,9 +11,9 @@ class Post < ActiveRecord::Base
 	def hashtag_title=(hashtag_title)
 		return if hashtag_title.blank?
 
-		formatted_name = "#" + hashtag_title
-		hashtag = Hashtag.create(title: formatted_name)
-		self.hashtags << hashtag
+		formatted_hashtags = hashtag_title.split(', ').map {|each_hashtag_title| "#" + each_hashtag_title.downcase }
+
+		formatted_hashtags.each {|each_formatted_hashtag| self.hashtags << Hashtag.create(title: each_formatted_hashtag)}
 
 	end
 end

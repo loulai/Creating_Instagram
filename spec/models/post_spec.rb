@@ -25,7 +25,13 @@ describe Post do
         expect(post.hashtags.first.title).to eq "#fluffy"    
         expect(post.hashtags.count).to eq 1
       end
+    end
 
+    describe "two hashtags" do
+      it 'adds two hashtags when given a string with two words' do
+        post.hashtag_title = "sunset, beach"
+        expect(post.hashtags.count).to eq 2
+      end
     end
 
   end
