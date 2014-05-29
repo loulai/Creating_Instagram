@@ -11,6 +11,6 @@ Scenario: visiting the posts page for the first time
 	Then I should see "There are no posts yet"
 
 Scenario: finding link to post a photo
-	Then I should find link "Create a Post"
+	Then I should find link "Post a Photo"
 
 
