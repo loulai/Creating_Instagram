@@ -33,11 +33,14 @@ group :test, :development do
 	gem 'cucumber'
 	gem 'cucumber-rails', require: false
 	gem 'database_cleaner'
+	gem 'factory_girl_rails'
 end
 
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
 gem 'bootstrap-sass'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

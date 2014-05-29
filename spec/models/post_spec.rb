@@ -1,7 +1,21 @@
 require 'spec_helper'
+require 'factory_girl'
 
 describe Post do
-  describe '#tag_names=' do
-  	
+
+	let(:post) { create(:post) }
+
+  describe '#hashtag_names=' do
+
+  	describe "no hashtags" do
+
+  		it "does nothing" do
+  		  post.hashtag_names = " "
+  		  expect(post.hashtags).to be_empty
+  		end
+  	  
+  	end
   end
 end
+
+

@@ -4,7 +4,7 @@ class Hashtag < ActiveRecord::Base
 	def hashtag
 	end
 
-	def hashtag=()
+	def hashtag=(tag_names)
 	end
 
 end
