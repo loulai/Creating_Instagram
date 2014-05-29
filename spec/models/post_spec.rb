@@ -16,7 +16,7 @@ describe Post do
 
     describe "one hashtag" do
       it 'adds a single tag to the post' do
-        post.hashtag_title = "#cute"
+        post.hashtag_title = "cute"
         expect(post.hashtags.count).to eq 1
       end
 
@@ -41,8 +41,9 @@ describe Post do
     end
 
     describe "repetitons" do
-      it '' do
-      
+      it 'only unique hashtags will be added to the database' do
+        post.hashtag_title = "water, water"
+        expect(post.hashtags.count).to eq 1
       end
     end
 
