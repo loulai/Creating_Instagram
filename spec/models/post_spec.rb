@@ -54,9 +54,8 @@ describe Post do
         expect(post.hashtags.first.title).to eq "#selfie"
       end
     end
-
-
   end
 end
 
 
+#pending: use regexp to split
