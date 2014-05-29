@@ -9,17 +9,23 @@ describe Post do
 
   	describe "no hashtags" do
   		it "does nothing" do
-  		  post.hashtag = " "
+  		  post.hashtag_title = " "
   		  expect(post.hashtags).to be_empty
   		end
   	end
 
     describe "one hashtag" do
-      it "adds # when necessary" do
-        post.hashtag = "fluffy"
+      it 'adds a single tag to the post' do
+        post.hashtag_title = "#cute"
         expect(post.hashtags.count).to eq 1
-        expect()    
       end
+
+       it "prepends # when necessary" do
+        post.hashtag_title = "fluffy"
+        expect(post.hashtags_title.first).to eq "#fluffy"    
+        expect(post.hashtags.count).to eq 1
+      end
+
     end
 
   end

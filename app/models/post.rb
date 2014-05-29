@@ -4,10 +4,11 @@ class Post < ActiveRecord::Base
 	belongs_to :user
 	has_and_belongs_to_many :hashtags
 
-	def hashtag
+	def hashtag_title
+		
 	end
 
-	def hashtag=(hashtag_title)
+	def hashtag_title=(hashtag_title)
 		" "
 	end
 end
