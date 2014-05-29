@@ -42,10 +42,19 @@ describe Post do
 
     describe "repetitons" do
       it 'only unique hashtags will be added to the database' do
-        post.hashtag_title = "water, water"
+        post.hashtag_title = "water, water, WATER, waTer, Water"
         expect(post.hashtags.count).to eq 1
       end
     end
+
+    describe "only allowing one # per hashtag" do
+      it "will delete superfluous #s" do
+        post.hashtag_title = "#selfie"
+        expect(post.hashtags.first.title).not_to eq "##selfie"
+        expect(post.hashtags.first.title).to eq "#selfie"
+      end
+    end
+
 
   end
 end
