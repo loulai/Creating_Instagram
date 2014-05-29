@@ -15,3 +15,18 @@
  */
 
 @import "bootstrap";
+
+.jumbotron {
+	background: image-url('blue.png');
+}
+
+.jumbotron .container {
+	opacity: 0.8;
+	background: rgba(255, 255, 255, 0.85);
+	padding: 30px 50px;
+}
+
+.jumbotron .container h1 {
+	opacity: 1.0;
+}
+
