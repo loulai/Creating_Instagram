@@ -22,7 +22,7 @@ describe Post do
 
        it "prepends # when necessary" do
         post.hashtag_title = "fluffy"
-        expect(post.hashtags_title.first).to eq "#fluffy"    
+        expect(post.hashtags.first.title).to eq "#fluffy"    
         expect(post.hashtags.count).to eq 1
       end
 
