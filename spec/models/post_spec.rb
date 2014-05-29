@@ -32,6 +32,18 @@ describe Post do
         post.hashtag_title = "sunset, beach"
         expect(post.hashtags.count).to eq 2
       end
+
+      it 'adds two hashtags correctly' do
+        post.hashtag_title = "flowers, pretty"
+        expect(post.hashtags[0].title).to eq "#flowers"
+        expect(post.hashtags[1].title).to eq "#pretty"
+      end
+    end
+
+    describe "repetitons" do
+      it '' do
+      
+      end
     end
 
   end
