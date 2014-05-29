@@ -10,7 +10,7 @@ describe Post do
   	describe "no hashtags" do
 
   		it "does nothing" do
-  		  post.hashtag_names = " "
+  		  post.hashtag = " "
   		  expect(post.hashtags).to be_empty
   		end
   	  

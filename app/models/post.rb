@@ -6,4 +6,8 @@ class Post < ActiveRecord::Base
 
 	def hashtag
 	end
+
+	def hashtag=(hashtag_title)
+		" "
+	end
 end

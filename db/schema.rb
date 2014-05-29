@@ -22,6 +22,11 @@ ActiveRecord::Schema.define(version: 20140529115228) do
     t.datetime "updated_at"
   end
 
+  create_table "hashtags_posts", id: false, force: true do |t|
+    t.integer "post_id",    null: false
+    t.integer "hashtag_id", null: false
+  end
+
   create_table "posts", force: true do |t|
     t.text     "caption"
     t.string   "image_url"
