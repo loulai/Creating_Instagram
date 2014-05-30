@@ -18,26 +18,22 @@
 
  				<div class="panel panel-default">
   
-  <div class="panel-heading"><%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %></div>
-  
-  <div class="panel-body">
-    <ul class="list-group">
-      <li class="list-group-item">CLICK HERE TO LIKE <%= link_to "Delete post", post_path(post), method: :delete %></li>
-       
-      <li class="list-group-item"><%= post.caption %> </li>
-      <li class="list-group-item">
-        <% post.hashtags.each do |hashtag| %>
-          <%= hashtag.title %> 
-        <% end%>
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-				
-
-
+				  <div class="panel-heading"><%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %></div>
+				  
+				  <div class="panel-body">
+				    <ul class="list-group">
+				      <li class="list-group-item">CLICK HERE TO LIKE <%= link_to "Delete post", post_path(post), method: :delete %></li>
+				       
+				      <li class="list-group-item"><%= post.caption %> </li>
+				      <li class="list-group-item">
+				        <% post.hashtags.each do |hashtag| %>
+				          <%= hashtag.title %> 
+				        <% end%>
+				      </li>
+				      
+				    </ul>
+				  </div>
+				</div>
 
 	 		</div>
 	 		

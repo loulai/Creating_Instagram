@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-
 describe Post do
 
 	let(:post) { create(:post) }
@@ -54,8 +53,17 @@ describe Post do
         expect(post.hashtags.first.title).to eq "#selfie"
       end
     end
-  end
+
+    describe "hashtags are entirely unique; they will be re-used" do
+      let(:hashtag) {Hashtag.create(title: 'yolo')}
+
+      it "will be re-used" do
+        post.hashtag_title = "yolo" 
+        expect(Hashtag.count).to eq 1
+        
+        expect(Hashtag.first.posts).to include post
+      end
+    end
+
+  end 
 end
-
-
-#pending: use regexp to split
