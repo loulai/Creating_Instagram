@@ -1,24 +1,34 @@
 <div class="jumbotron">
 	<div class="container">
-        <h1>Instagram</h1>
-        <p class="lead">You are on the posts page, where you can view your own posts and of people you follow.</p>
-        <p><a class="btn btn-lg btn-success" href="posts/new" role="button">Post a Photo</a></p>
-      </div>
-     </div>
+    <h1>Instagram</h1>
+    <p class="lead">You are on the posts page, where you can view your own posts and of people you follow.</p>
+    <p><a class="btn btn-lg btn-success" href="posts/new" role="button">Post a Photo</a></p>
+  </div>
+</div>
  
- <% if @posts.any? %>
-  	<ul>
+<% if @posts.any? %>
+
  	<% @posts.each do |post| %>
-	 		<div class="panel panel-default"><li> 
-	 			<%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %><br />
-	 			<%= post.caption %> 
-	 			<%= post.hashtags.each do |hashtag| %>
-	 			<%= hashtag %> 
-	 			<%end%>
-	 			<%= link_to "Delete post", post_path(post), method: :delete %>
-	 			</li></div>
-	 	<%end%>
-	 	</ul>
+		<div class='row'>  	
+ 			<div class='col-md-2 col-md-offset-3'>
+ 				<%= post.user.email %>
+ 			</div>
+ 			
+ 			<div class='col-md-4'>
+				<div class="panel panel-default">
+		 			<%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %><br />
+		 			<%= post.caption %> 
+
+		 			<% post.hashtags.each do |hashtag| %>
+			 			<%= hashtag.title %> 
+		 			<% end%>
+
+			 		<%= link_to "Delete post", post_path(post), method: :delete %>
+		 		</div>
+	 		</div>
+	 		
+		</div>
+	<%end%>	
 
 <%else%>
 	<p>There are no posts yet</p>

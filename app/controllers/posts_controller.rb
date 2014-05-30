@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   end
 
   def create
-  	@post = current_user.posts.new(params[:post].permit(:picture, :caption))
+  	@post = current_user.posts.new(params[:post].permit(:picture, :caption, :hashtag_title))
   	@post.save!
   	redirect_to '/'
   end
