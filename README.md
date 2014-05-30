@@ -44,6 +44,7 @@ This is what my Instagram looked like before Bootstrap:
 ![](README_images/img/unstyled_instagram.png)
 
 After a little Bootstrap magic (panels, panel lists, jumbrotron, columns, column offsets etc.):
+
 ![](README_images/img/instagram2.png)
 
 Features
