@@ -28,6 +28,7 @@
 				      <li class="list-group-item">
 				        <% post.hashtags.each do |hashtag| %>
 				          <%= hashtag.title %> 
+				          <%= link_to 'Show', hashtag_path(hashtag) %>
 				        <% end%>
 				      </li>
 				      
