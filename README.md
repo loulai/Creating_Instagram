@@ -29,13 +29,13 @@ Please feel free to use a different markup language if you do not plan to run
 
 Instagram
 ===
-my re-creation of it using Rails
----
+This is a two week project that re-creates Instagram using Rails. The end goal is to learn how to build websites from scratch and understand databases and Rails better. 
+
 This is my third project using Rails. 
 
 Testing
 ---
-Intagration testing is done with cucumber.
+This project is 100% TDD. Integration testing is done with cucumber and unit testing is done with Rspec.
 
 Timeline
 ---
