@@ -56,3 +56,11 @@ Signing in | Signing in with a required username
 Comments| Likes
 Hashtags | Display photos by hashtags
 
+Tech
+---
+* Cucumber
+* Rspec
+* Ruby
+* Paperclip
+* Bootstrap
+
