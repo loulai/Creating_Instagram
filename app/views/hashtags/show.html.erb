@@ -2,12 +2,14 @@
 	<div class="container">
     <h1><%= @hashtag.title %></h1>
     <p class="lead">
-    	There are <%= @posts_count %> awesome photos hashtagged with <%= @hashtag.title.delete('#')%>.</p>
+    	<%= pluralize(@posts_count, "photo")%> hashtagged with <%= @hashtag.title.delete('#')%>.</p>
     <p><a class="btn btn-lg btn-default" href=<%=posts_path%> role="button">Back</a></p>
   </div>
 </div>
 
-<% @hashtag.posts.each do |post| %>
-	<%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %>
-<% end %>
+
+	<% @hashtag.posts.each do |post| %>
+		<%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %>
+	<% end %>
+
 
