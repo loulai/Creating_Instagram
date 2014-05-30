@@ -14,4 +14,8 @@ Then(/^I should see my photo$/) do
   expect(page).to have_css("img.uploaded-picture")
 end
 
+Then(/^I should see two photos$/) do
+  expect(page).to have_css("img", count: 2)
+end
+
 

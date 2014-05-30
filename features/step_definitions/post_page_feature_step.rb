@@ -18,7 +18,7 @@ Given(/^I am on the "(.*?)" page$/) do |page_name|
   expect(current_path).to eq("/#{page_name}")
 end
 
-#--- finding stuff
+#--- finding stuff (not photo stuff)
 
 Then(/^I should see "(.*?)"$/) do |string|
   expect(page).to have_content(string)
