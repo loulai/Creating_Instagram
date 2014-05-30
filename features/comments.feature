@@ -19,5 +19,5 @@ Background: Making sure two photos are uploaded
 Scenario: Commenting on (my own) photo
 	When I fill in "comments" with "This was from my nan."
 	Then I should be on the "posts" page
-	And I should see "This was from my nan."
+	And I should find text "This was from my nan."
 
