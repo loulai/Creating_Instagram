@@ -1,4 +1,10 @@
 <h1><%= @hashtag.title %></h1>
-<% @hashtag.posts.each do |post| %>
-	<%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %>
-<% end %>
+
+
+<div class="row">
+	<% @hashtag.posts.each do |post| %>
+		<div class="col-md-4">
+		<%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %>
+		</div>
+	<% end %>
+</div>
