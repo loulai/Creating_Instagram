@@ -46,12 +46,12 @@ This is what my instagram looked like before I used bootstrap:
 
 Features
 ---
-Ideally, my version of Instagram will have all the features of the real Instagram. However, time and my current ability are limitations that filter what I *can* do versus what I *want* to do.
+Ideally, my version of Instagram will have all the features of the real Instagram. However, time and my current ability are limitations that filter what I *can* do from what I *want* to do.
 
 So I drew up this table that contains what I wish my Instagram has versus what I actually have. As I spend more time on this project and get more proficient at Rails, more features are added.
 
 Current Features | Feature Wish-List
----------------- | -------------------
+:----------------: | :-------------------:
 Signing in | Signing in with a required username
 Comments| Likes
 Hashtags | Display photos by hashtags
