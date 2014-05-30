@@ -35,14 +35,16 @@ This is my third project using Rails.
 
 Testing
 ---
-This project is 100% TDD. Integration testing is done with cucumber and unit testing is done with Rspec.
+This project is 100% TDD. Integration testing is done with Cucumber and unit testing is done with Rspec.
 
 Timeline
 ---
-This is what my instagram looked like before I used bootstrap:
- 
+This is what my Instagram looked like before Bootstrap:
 
 ![](README_images/img/unstyled_instagram.png)
+
+After a little Bootstrap magic (panels, panel lists, jumbrotron, columns, column offsets etc.):
+![](README_images/img/instagram2.png)
 
 Features
 ---
@@ -61,6 +63,7 @@ Tech
 * Cucumber
 * Rspec
 * Ruby
+* Ruby on Rails
 * Paperclip
 * Bootstrap
 
