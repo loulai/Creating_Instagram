@@ -9,14 +9,14 @@
  <% if @posts.any? %>
   	<ul>
  	<% @posts.each do |post| %>
-	 		<li> 
+	 		<div class="panel panel-default"><li> 
 	 			<%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %><br />
 	 			<%= post.caption %> 
 	 			<%= post.hashtags.each do |hashtag| %>
 	 			<%= hashtag %> 
 	 			<%end%>
-	 		</li>
 	 			<%= link_to "Delete post", post_path(post), method: :delete %>
+	 			</li></div>
 	 	<%end%>
 	 	</ul>
 
