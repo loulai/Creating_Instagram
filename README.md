@@ -57,7 +57,10 @@ Current Features | Feature Wish-List
 :----------------: | :-------------------:
 Signing in | Signing in with a required username
 Comments| Likes
-Hashtags | Display photos by hashtags
+Hashtags | 
+Display photos by hashtags |
+Displays a changing header when showing hashtags |
+
 
 Tech
 ---
