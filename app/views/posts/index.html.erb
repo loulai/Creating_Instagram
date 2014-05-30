@@ -28,7 +28,12 @@
 				        <% post.hashtags.each do |hashtag| %>
 				          <%= link_to hashtag.title, hashtag_path(hashtag) %>
 				        <% end%></li>
-				      <li class="list-group-item">COMMENT</li>
+				      <li class="list-group-item">
+				      	<%= form_for @comment do |f| %>
+				      		<% f.label :comment%>
+				      		<% f.text_area :comment %>
+				      		<% f.submit %>
+				      	<%end %></li>
 				    </ul>
 				  </div>
 				</div>
