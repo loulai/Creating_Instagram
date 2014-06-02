@@ -49,7 +49,7 @@
 					  <div class="panel-body">
 					    <ul class="list-group">	
 					      <li class="list-group-item">
-					      		<%= link_to " ❤ #{post.likes.count}", post_likes_path(post), method: :post %>
+					      		<%= link_to " ❤ #{post.likes.count}", post_likes_path(post), class: 'like-btn' %>
 					      	| <%= link_to "Delete post", post_path(post), method: :delete %> 
 					      	| <%= link_to "Show more", '#', data: {toggle: 'modal', target: ".image-modal-#{post.id}"} %></li>
 					      <li class="list-group-item">
