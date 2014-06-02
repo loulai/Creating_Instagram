@@ -40,6 +40,7 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 
 gem 'bootstrap-sass'
 
+gem 'websocket-rails'
 
 
 # Use ActiveModel has_secure_password

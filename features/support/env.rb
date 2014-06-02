@@ -13,7 +13,10 @@ require 'cucumber/rails'
 #   DatabaseCleaner.cleaning(&block)
 # end
 
-
+Capybara.server do |app, port|
+  require 'rack/handler/thin'
+  Rack::Handler::Thin.run(app, :Port => port)
+end
 
 ActionController::Base.allow_rescue = false
 Cucumber::Rails::Database.javascript_strategy = :truncation
