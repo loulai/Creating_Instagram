@@ -18,4 +18,6 @@ Then(/^I should see two photos$/) do
   expect(page).to have_css("img.uploaded-picture", count: 2)
 end
 
-
+When(/^I wait (\d+) second$/) do |arg1|
+	sleep 2
+end

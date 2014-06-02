@@ -33,6 +33,7 @@ group :test, :development do
 	gem 'cucumber'
 	gem 'cucumber-rails', require: false
 	gem 'database_cleaner'
+	gem 'poltergeist'
 	gem 'factory_girl_rails'
 end
 

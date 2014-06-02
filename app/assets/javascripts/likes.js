@@ -6,9 +6,10 @@ $(document).ready(function(){
 
 	var connection = new WebSocketRails('localhost:3000/websocket')
 	channel = connection.subscribe('likes');
-	channel.bind('new', function(resp) {
-		console.log('hi')
-  	$('.like-btn').text('❤ ' + resp.new_like_count);
+	channel.bind('new', function(post) {
+	
+		var postElem = $('.post[data-id=' + post.id + '] .like-btn')
+  	postElem.text('❤ ' + post.new_like_count);
 	});
 
 })

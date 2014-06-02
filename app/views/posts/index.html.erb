@@ -40,7 +40,7 @@
 	 				<%= post.user.email %>
 	 			</div>
 	 			
-	 			<div class='col-md-5'>
+	 			<div class='col-md-5 post' data-id='<%= post.id %>'>
 
 	 				<div class="panel panel-default">
 	  
@@ -62,7 +62,7 @@
 									    <div class="modal-content">
 									      <div class="modal-header">
 									        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-									        <h4 class="modal-title">Photo by <%= post.user.email %></h4>
+									        <h4 class="modal-title">Posted by <%= post.user.email %></h4>
 									      </div>
 									      <div class="modal-body">
 									      	<%= image_tag post.picture.url%>

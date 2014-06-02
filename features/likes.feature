@@ -8,14 +8,10 @@ Background: Making sure two photos are uploaded
 	And I visit the "posts" page
 	And I click "Post a Photo"
 	And I attach a photo
-	When I fill in the "Hashtags" area with "cute, fluffy"
 	And I click "Create Post"
 
-	And I click "Post a Photo"
-	And I attach a photo
-	When I fill in the "Hashtags" area with "fluffy, omg, dog"
-	And I click "Create Post"
-
+@javascript
 Scenario: Liking a photo
 	When I click "❤ 0"
+	And I wait 1 second
 	Then I should see "❤ 1"
