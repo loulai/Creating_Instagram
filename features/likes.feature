@@ -15,3 +15,7 @@ Background: Making sure two photos are uploaded
 	And I attach a photo
 	When I fill in the "Hashtags" area with "fluffy, omg, dog"
 	And I click "Create Post"
+
+Scenario: Liking a photo
+	When I click "❤ 0"
+	Then I should see "❤ 1"
