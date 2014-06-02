@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def index
   	@posts = current_user.posts
+    @comments = Comment.new
   end
 
   def new

@@ -17,16 +17,6 @@
 
 @import "bootstrap";
 
-.jumbotron {
-	background: image-url('blue.png');
-}
-
-.jumbotron .container {
-	background: rgba(255, 255, 255, 0.85);
-	opacity: 0.80;
-	padding: 30px 50px;
-}
-
 .jumbotron .container h1 {
 	opacity: 1.0;
 }
@@ -38,5 +28,21 @@
 .jumbotron .container .btn.btn-primary {
 	opacity: 1.0;
 }
+
+.landing_page .jumbotron{
+	background: image-url('insta_collage.png');
+}
+
+.jumbotron {
+	background: image-url('blue.png');
+}
+
+.jumbotron .container {
+	background: rgba(255, 255, 255, 0.90);
+	opacity: 0.90;
+	padding: 30px 50px;
+}
+
+
 
 

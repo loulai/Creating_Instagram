@@ -22,18 +22,20 @@
 				  
 				  <div class="panel-body">
 				    <ul class="list-group">
-				      <li class="list-group-item">CLICK HERE TO LIKE <%= link_to "Delete post", post_path(post), method: :delete %></li>
-				       
-				      <li class="list-group-item"><%= post.caption %> 
+				      <li class="list-group-item">CLICK HERE TO LIKE 
+				      	| <%= link_to "Delete post", post_path(post), method: :delete %> 
+				      	| <%= link_to "Show more", post_path</li>
+				      <li class="list-group-item">
+				      	<%= post.caption %> 
 				        <% post.hashtags.each do |hashtag| %>
 				          <%= link_to hashtag.title, hashtag_path(hashtag) %>
 				        <% end%></li>
+				    
 				      <li class="list-group-item">
-				      	<%= form_for @comment do |f| %>
-				      		<% f.label :comment%>
-				      		<% f.text_area :comment %>
-				      		<% f.submit %>
-				      	<%end %></li>
+	
+				      	<textarea id="post_comment"  placeholder="comment" name="post[comment]"></textarea><br />
+				   																								
+				      </li>
 				    </ul>
 				  </div>
 				</div>
@@ -41,7 +43,9 @@
 	 		</div>
 	 		
 		</div>
-	<%end%>	
+
+  <%end%>	
+	
 
 <%else%>
 	<p>There are no posts yet</p>
