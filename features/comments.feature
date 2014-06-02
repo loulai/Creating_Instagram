@@ -16,8 +16,9 @@ Background: Making sure two photos are uploaded
 	When I fill in the "Hashtags" area with "fluffy, omg, dog"
 	And I click "Create Post"
 
-# Scenario: Commenting on (my own) photo
-# 	When I fill in "comments" with "This was from my nan."
-# 	Then I should be on the "posts" page
-# 	And I should find text "This was from my nan."
+Scenario: Commenting on (my own) photo
+	Given I visit the "posts" page
+	When I fill in the "comments" area with "This was from my nan."
+	And I click "Comment"
+	Then I should find text "This was from my nan."
 

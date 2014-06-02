@@ -3,11 +3,16 @@ class PostsController < ApplicationController
 
   def index
   	@posts = current_user.posts
-    @comments = Comment.new
+    @post = 
+    @comment = @post.comments.new(params[:comment].permit(:comment))
+    @comment.user = current_user
+    @comment.save
+
   end
 
   def new
   	@post = Post.new
+
   end
 
   def create
@@ -22,6 +27,10 @@ class PostsController < ApplicationController
 
     flash[:notice] = 'Your post has been deleted'
 
+    redirect_to '/'
+  end
+
+  def update
     redirect_to '/'
   end
 
