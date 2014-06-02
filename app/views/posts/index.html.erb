@@ -10,11 +10,11 @@
 
  	<% @posts.each do |post| %>
 		<div class='row'>  	
- 			<div class='col-md-2 col-md-offset-3'>
+ 			<div class='col-md-2 col-md-offset-2'>
  				<%= post.user.email %>
  			</div>
  			
- 			<div class='col-md-4'>
+ 			<div class='col-md-5'>
 
  				<div class="panel panel-default">
   
@@ -24,11 +24,27 @@
 				    <ul class="list-group">
 				      <li class="list-group-item">CLICK HERE TO LIKE 
 				      	| <%= link_to "Delete post", post_path(post), method: :delete %> 
-				      	| <%= link_to "Show more", post_path</li>
+				      	| <%= link_to "Show more", post_path(post), method: :get %></li>
 				      <li class="list-group-item">
 				      	<%= post.caption %> 
 				        <% post.hashtags.each do |hashtag| %>
 				          <%= link_to hashtag.title, hashtag_path(hashtag) %>
+
+								<div class="modal fade ">
+								  <div class="modal-dialog modal-lg">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								        <h4 class="modal-title">Photo by <%= post.user.email %></h4>
+								      </div>
+								      <div class="modal-body">
+								      	<%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %>
+								      </div>
+								      
+								    </div>
+								  </div>
+								</div>
+
 				        <% end%></li>
 				    
 				      <li class="list-group-item">
