@@ -17,6 +17,27 @@
 
 @import "bootstrap";
 
+.landing_page .jumbotron{
+	background: image-url('insta_collage.png');
+}
+
+.all-posts .panel {
+	background-color: rgb(221,222,223);
+	padding: 20px 32px;
+	border-style: solid;
+	border-width: 1.9px;
+	border-color: rgb(195,196,197);
+}
+
+.col-md-2 {
+	color: #3f729b
+}
+
+
+body {
+	background-color: rgb(237,238,239);
+}
+
 .jumbotron .container h1 {
 	opacity: 1.0;
 }
@@ -29,10 +50,6 @@
 	opacity: 1.0;
 }
 
-.landing_page .jumbotron{
-	background: image-url('insta_collage.png');
-}
-
 .jumbotron {
 	background: image-url('blue.png');
 }
@@ -42,6 +59,8 @@
 	opacity: 0.90;
 	padding: 30px 50px;
 }
+
+
 
 
 

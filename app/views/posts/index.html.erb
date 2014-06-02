@@ -1,4 +1,31 @@
-<div class="jumbotron">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li ><a href="#">Instagram</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.email %> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">View Profile</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><%= link_to 'Edit profile', edit_user_registration_path%></a></li>
+            <li class="divider"></li>
+            <li><a href="#"><%= link_to "Logout", destroy_user_session_path, method: :delete%></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="jumbotron posts_index">
 	<div class="container">
     <h1>Instagram</h1>
     <p class="lead">You are on the posts page, where you can view your own posts and of people you follow.</p>
@@ -7,7 +34,7 @@
 </div>
  
 <% if @posts.any? %>
-
+<div class="all-posts">
  	<% @posts.each do |post| %>
 		<div class='row'>  	
  			<div class='col-md-2 col-md-offset-2'>
@@ -21,16 +48,16 @@
 				  <div class="panel-heading"><%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %></div>
 				  
 				  <div class="panel-body">
-				    <ul class="list-group">
+				    <ul class="list-group">	
 				      <li class="list-group-item">CLICK HERE TO LIKE 
 				      	| <%= link_to "Delete post", post_path(post), method: :delete %> 
-				      	| <%= link_to "Show more", post_path(post), method: :get %></li>
+				      	| <%= link_to "Show more", '#', data: {toggle: 'modal', target: ".image-modal-#{post.id}"} %></li>
 				      <li class="list-group-item">
 				      	<%= post.caption %> 
 				        <% post.hashtags.each do |hashtag| %>
 				          <%= link_to hashtag.title, hashtag_path(hashtag) %>
 
-								<div class="modal fade ">
+								<div class="modal fade image-modal-<%= post.id%> ">
 								  <div class="modal-dialog modal-lg">
 								    <div class="modal-content">
 								      <div class="modal-header">
@@ -38,7 +65,7 @@
 								        <h4 class="modal-title">Photo by <%= post.user.email %></h4>
 								      </div>
 								      <div class="modal-body">
-								      	<%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %>
+								      	<%= image_tag post.picture.url%>
 								      </div>
 								      
 								    </div>
@@ -61,13 +88,11 @@
 		</div>
 
   <%end%>	
-	
+</div>
 
 <%else%>
 	<p>There are no posts yet</p>
 <%end%>
 
-<%= link_to 'Edit profile', edit_user_registration_path%>
-<%= link_to "Logout", destroy_user_session_path, method: :delete%>
 
 
