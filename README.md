@@ -54,10 +54,9 @@ Ideally, my version of Instagram will have all the features of the real Instagra
 So I drew up this table that contains what I wish my Instagram has versus what I actually have. As I spend more time on this project and get more proficient at Rails, more features are added.
 
 
-Signing in
-:----------------:
+Signing in |
+:----------------:| :-----------------:
 Current Features | Feature Wish-List
-:----------------: | :-------------------:
 Signing in | Signing in with a required username
 Comments| A user can only like a photo once
 Hashtags | 
