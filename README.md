@@ -54,10 +54,11 @@ Ideally, my version of Instagram will have all the features of the real Instagra
 So I drew up this table that contains what I wish my Instagram has versus what I actually have. As I spend more time on this project and get more proficient at Rails, more features are added.
 
 
-*Signing in Feature *
+* Signing in Feature *
 
+Signing in Feature
+:-----------------:
 Current     | Wish-List
-:----------------:| :-----------------:
 Must sign in with email| Signing in with a required, unique username
 Must sign in with password |
 
