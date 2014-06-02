@@ -55,6 +55,7 @@ So I drew up this table that contains what I wish my Instagram has versus what I
 
 
 *Signing in Feature *
+
 Current     | Wish-List
 :----------------:| :-----------------:
 Must sign in with email| Signing in with a required, unique username
