@@ -3,11 +3,9 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-      </ul>
+        <li class="active"><a href="#">Home</a></li></ul>
       <ul class="nav navbar-nav">
-        <li ><a href="#">Instagram</a></li>
-      </ul>
+        <li ><a href="#">Instagram</a></li></ul>
       
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -33,66 +31,66 @@
   </div>
 </div>
  
-<% if @posts.any? %>
-<div class="all-posts">
- 	<% @posts.each do |post| %>
-		<div class='row'>  	
- 			<div class='col-md-2 col-md-offset-2'>
- 				<%= post.user.email %>
- 			</div>
- 			
- 			<div class='col-md-5'>
+<div class='container'>
+	<% if @posts.any? %>
+	<div class="all-posts">
+	 	<% @posts.each do |post| %>
+			<div class='row'>  	
+	 			<div class='col-md-2 col-md-offset-2'>
+	 				<%= post.user.email %>
+	 			</div>
+	 			
+	 			<div class='col-md-5'>
 
- 				<div class="panel panel-default">
-  
-				  <div class="panel-heading"><%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %></div>
-				  
-				  <div class="panel-body">
-				    <ul class="list-group">	
-				      <li class="list-group-item">CLICK HERE TO LIKE 
-				      	| <%= link_to "Delete post", post_path(post), method: :delete %> 
-				      	| <%= link_to "Show more", '#', data: {toggle: 'modal', target: ".image-modal-#{post.id}"} %></li>
-				      <li class="list-group-item">
-				      	<%= post.caption %> 
-				        <% post.hashtags.each do |hashtag| %>
-				          <%= link_to hashtag.title, hashtag_path(hashtag) %>
+	 				<div class="panel panel-default">
+	  
+					  <div class="panel-heading"><%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %></div>
+					  
+					  <div class="panel-body">
+					    <ul class="list-group">	
+					      <li class="list-group-item">
+					      		<%= link_to " ❤ #{post.likes.count}", post_likes_path(post), method: :post %>
+					      	| <%= link_to "Delete post", post_path(post), method: :delete %> 
+					      	| <%= link_to "Show more", '#', data: {toggle: 'modal', target: ".image-modal-#{post.id}"} %></li>
+					      <li class="list-group-item">
+					      	<%= post.caption %> 
+					        <% post.hashtags.each do |hashtag| %>
+					          <%= link_to hashtag.title, hashtag_path(hashtag) %>
 
-								<div class="modal fade image-modal-<%= post.id%> ">
-								  <div class="modal-dialog modal-lg">
-								    <div class="modal-content">
-								      <div class="modal-header">
-								        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								        <h4 class="modal-title">Photo by <%= post.user.email %></h4>
-								      </div>
-								      <div class="modal-body">
-								      	<%= image_tag post.picture.url%>
-								      </div>
-								      
-								    </div>
-								  </div>
-								</div>
+									<div class="modal fade image-modal-<%= post.id%> ">
+									  <div class="modal-dialog modal-lg">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									        <h4 class="modal-title">Photo by <%= post.user.email %></h4>
+									      </div>
+									      <div class="modal-body">
+									      	<%= image_tag post.picture.url%>
+									      </div>
+									      
+									    </div>
+									  </div>
+									</div>
 
-				        <% end%></li>
-				    
-				      <li class="list-group-item">
-	
-				      	<textarea id="post_comment"  placeholder="comment" name="post[comment]"></textarea><br />
-				   																								
-				      </li>
-				    </ul>
-				  </div>
-				</div>
+					        <% end%></li>
+					    
+					      <li class="list-group-item">
+		
+					      	<textarea id="post_comment"  placeholder="comment" name="post[comment]"></textarea><br />
+					   																								
+					      </li>
+					    </ul>
+					  </div>
+					</div>
 
-	 		</div>
-	 		
-		</div>
+		 		</div>
+		 		
+			</div>
 
-  <%end%>	
+	  <%end%>	
+	</div>
+
+	<%else%>
+		<p>There are no posts yet</p>
+	<%end%>
 </div>
-
-<%else%>
-	<p>There are no posts yet</p>
-<%end%>
-
-
-

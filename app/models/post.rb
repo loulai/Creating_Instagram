@@ -4,6 +4,7 @@ class Post < ActiveRecord::Base
 	belongs_to :user
 	has_and_belongs_to_many :hashtags
 	has_many :comments
+	has_many :likes
 
 	def hashtag_title
 
