@@ -44,7 +44,11 @@ When(/^I click the link "(.*?)"$/) do |link_name|
 end
 
 When(/^I click "(.*?)"$/) do |clicky_name|
-  click_on(clicky_name)
+  if page.has_button?(clicky_name)
+    first(:button, clicky_name).click
+  else
+    first(:link, clicky_name).click
+  end
 end
 
 
