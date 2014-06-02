@@ -60,18 +60,15 @@ Must sign in with email| Signing in with a required, unique username
 Must sign in with password |
 
 Comments: Current Features  | Wish-List Features
-Current | Wish-List
 :----------------:| :-----------------:
 Comments| A user can only like a photo once
 
 Hashtags: Current Features  | Wish-List Features
-Current | Wish-List
 :----------------:| :-----------------:
 Display photos by hashtags |
 Displays a changing header when showing hashtags |
 
 Likes: Current Features  | Wish-List Features
-Current | Wish-List
 :----------------:| :-----------------:
 A user can like a photo | A user can like a photo once
  | A user can unlike a photo
