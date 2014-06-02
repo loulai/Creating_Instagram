@@ -61,7 +61,7 @@ Must sign in with password |
 
 Comments: Current Features  | Wish-List Features
 :----------------:| :-----------------:
-Comments| A user can only like a photo once
+-| -
 
 Hashtags: Current Features  | Wish-List Features
 :----------------:| :-----------------:
@@ -71,7 +71,7 @@ Displays a changing header when showing hashtags |
 Likes: Current Features  | Wish-List Features
 :----------------:| :-----------------:
 A user can like a photo | A user can like a photo once
- | A user can unlike a photo
+Updates when clicked without page refresh| A user can unlike a photo
   | 'Like' button darkens upon liking
 
 
