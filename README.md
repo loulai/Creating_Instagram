@@ -37,6 +37,12 @@ Testing
 ---
 This project is 100% TDD. Integration testing is done with Cucumber and unit testing is done with Rspec.
 
+Heroku
+---
+This app is deployed on [Heroku].
+
+[Heroku]:lougram.herokuapp.com
+
 Timeline
 ---
 This is what my Instagram looked like before Bootstrap:
