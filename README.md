@@ -86,3 +86,7 @@ Tech
 * Paperclip
 * Bootstrap
 
+* Websockets
+
+* Heroku
+
