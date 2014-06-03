@@ -3,16 +3,12 @@ class PostsController < ApplicationController
 
   def index
   	@posts = current_user.posts
-    @post = 
-    @comment = @post.comments.new(params[:comment].permit(:comment))
-    @comment.user = current_user
-    @comment.save
-
+    @comment = Comment.new
+    
   end
 
   def new
   	@post = Post.new
-
   end
 
   def create

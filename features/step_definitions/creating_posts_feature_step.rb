@@ -1,7 +1,7 @@
 #-- filling in stuff 
 
 When(/^I fill in the "(.*?)" area with "(.*?)"$/) do |area, stuff|
-  fill_in(area, :with => stuff)
+  fill_in(area, :with => stuff, match: :first)
 end
 
 #-- photo stuff

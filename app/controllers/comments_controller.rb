@@ -11,9 +11,4 @@ class CommentsController < ApplicationController
 		redirect_to '/'
 	end
 
-	def new
-		@post = Post.find(params[:post_id])
-		@comment = Comment.new
-	end
-
 end

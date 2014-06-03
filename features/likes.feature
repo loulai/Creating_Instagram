@@ -13,5 +13,10 @@ Background: Making sure two photos are uploaded
 @javascript
 Scenario: Liking a photo
 	When I click "❤ 0"
-	# And I wait 1 second
-	# Then I should see "❤ 1"
+	Then I should see "❤ 1"
+
+@javascript
+Scenario: Unliking a photo
+	Given I have liked a photo
+	When I click "❤ 1"
+	Then I should see "❤ 0"

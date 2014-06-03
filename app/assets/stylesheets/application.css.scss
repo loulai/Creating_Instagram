@@ -17,8 +17,32 @@
 
 @import "bootstrap";
 
+//{--landing page--}
+
 .landing_page .jumbotron{
 	background: image-url('insta_collage.png');
+}
+
+.landing_page .jumbotron .container {
+	background: rgba(255, 255, 255, 0.90);
+	opacity: 0.90;
+	padding: 30px 50px;
+	border-radius: 25px;
+	box-shadow: 2px 2px 2px #8F8F8F;
+}
+
+//{--posts page--}
+
+.jumbotron.posts_index {
+	background: image-url('blue.png');
+}
+
+.jumbotron.posts_index .container {
+	background: rgba(255, 255, 255, 0.90);
+	opacity: 0.90;
+	padding: 30px 50px;
+	border-radius: 25px;
+	box-shadow: 5px 10px 10px #0A4C62;
 }
 
 .all-posts .panel {
@@ -34,34 +58,25 @@
 	style: bold;
 }
 
+//--{general everything}--
 
 body {
 	background-color: rgb(237,238,239);
 }
 
-.jumbotron .container h1 {
+.jumbotron h1 {
 	opacity: 1.0;
 }
 
-.jumbotron .container .btn.btn-default {
+.jumbotron.btn.btn-default {
 	opacity: 1.0;
 }
 
-.jumbotron .container .btn.btn-primary {
+.jumbotron .btn.btn-primary {
 	opacity: 1.0;
 }
 
-.jumbotron {
-	background: image-url('blue.png');
-}
 
-.jumbotron .container {
-	background: rgba(255, 255, 255, 0.90);
-	opacity: 0.90;
-	padding: 30px 50px;
-	border-radius: 25px;
-	box-shadow: 5px 10px 10px #0A4C62;
-}
 
 
 
