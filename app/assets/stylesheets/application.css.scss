@@ -58,6 +58,16 @@
 	style: bold;
 }
 
+.panel-body #comment_comment {
+	background-color: #FAFAFA;
+	width:100%;
+	border:1px solid #D8D8D8;
+}
+
+.panel-heading {
+	border:30px solid;
+}
+
 //--{general everything}--
 
 body {
@@ -74,6 +84,12 @@ body {
 
 .jumbotron .btn.btn-primary {
 	opacity: 1.0;
+}
+
+img {
+ display: block;
+ margin-left:auto;
+ margin-right: auto
 }
 
 

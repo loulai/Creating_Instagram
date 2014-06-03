@@ -47,6 +47,7 @@
 					  
 					  <div class="panel-body">
 					    <ul class="list-group">	
+
 					      <li class="list-group-item">
 					      <% if post.likes.any? {|l| l.user_id == current_user.id } %>
 					      	<%= link_to " ❤ #{post.likes.count}", post_like_path(post), method: :delete, class: 'like-btn' %>
@@ -63,16 +64,16 @@
 
 					      <% if post.comments.any? %>
 					   			<% post.comments.each do |comment| %>
-							      <li class="list-group-item">		   			
+							      <li class="comment_display list-group-item">		   			
 						   				<%= comment.comment %>
 							      </li>
 					   			<%end%>						
 						 		<%end%>
 
-						     <li class="list-group-item">
+						     <li class="comment_form list-group-item">
 					   			<%= form_for [post, @comment] do |f| %>
 
-										<%= f.label :comment, "Comment:" %><br />
+										<%= f.label :comment, "Comment:" %>
 										<%= f.text_area :comment, placeholder: "Write a comment..."%><br />
 										<%= f.submit %>
 
