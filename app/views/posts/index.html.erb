@@ -63,9 +63,11 @@
 					         <% end%>
 
 					      <% if post.comments.any? %>
+					       <li class="list-group-item"><%= post.comments.count %> comments</li>
 					   			<% post.comments.each do |comment| %>
 							      <li class="comment_display list-group-item">		   			
-						   				<%= comment.comment %>
+						   				<span class="commenter"><%= comment.user.email %>:    </span> 
+						   					<%= comment.comment %>
 							      </li>
 					   			<%end%>						
 						 		<%end%>

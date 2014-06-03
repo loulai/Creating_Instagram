@@ -22,3 +22,5 @@ Scenario: Commenting on (my own) photo
 	And I click "Comment"
 	Then I should find text "This was from my nan."
 
+Scenario: Deleting a comment
+
