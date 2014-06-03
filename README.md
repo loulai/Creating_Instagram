@@ -39,9 +39,9 @@ This project is 100% TDD. Integration testing is done with Cucumber and unit tes
 
 Heroku
 ---
-This application is deployed on Heroku. Click [here] to play with the better instagram (I joke, I joke).
+This application is deployed on Heroku. Click [here] to play with the better Instagram (I joke, I joke).
 
-[here]:lougram.herokuapp.com
+[here]:http://lougram.herokuapp.com/
 
 Timeline
 ---
