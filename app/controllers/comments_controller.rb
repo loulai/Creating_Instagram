@@ -11,4 +11,11 @@ class CommentsController < ApplicationController
 		redirect_to '/'
 	end
 
+	def destroy
+		Comment.find(params[:id]).destroy
+
+		redirect_to '/'
+	end
+
+
 end

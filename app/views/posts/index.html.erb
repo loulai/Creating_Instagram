@@ -68,6 +68,7 @@
 							      <li class="comment_display list-group-item">		   			
 						   				<span class="commenter"><%= comment.user.email %>:    </span> 
 						   					<%= comment.comment %>
+						   					<%= link_to "྾", post_comment_path(post, comment), method: :delete %>
 							      </li>
 					   			<%end%>						
 						 		<%end%>

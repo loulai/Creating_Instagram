@@ -22,5 +22,9 @@ Scenario: Commenting on (my own) photo
 	And I click "Comment"
 	Then I should find text "This was from my nan."
 
-Scenario: Deleting a comment
+Scenario: Having the option to delete something
+	Given I visit the "posts" page
+	And I fill in the "Comment" area with "This was from my nan."
+	And I click "Comment"
+	Then I should find link "྾"
 
