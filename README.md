@@ -61,12 +61,12 @@ Must sign in with password |
 
 Comments: Current Features  | Wish-List Features
 :----------------:| :-----------------:
--| -
+Anyone can comment on a photo| Nicer looking input section
 
 Hashtags: Current Features  | Wish-List Features
 :----------------:| :-----------------:
 Display photos by hashtags |
-Displays a changing header when showing hashtags |
+Displays a changing header on 'show' |
 
 Likes: Current Features  | Wish-List Features
 :----------------:| :-----------------:
