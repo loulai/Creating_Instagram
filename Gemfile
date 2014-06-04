@@ -35,6 +35,7 @@ group :test, :development do
 	gem 'database_cleaner'
 	gem 'poltergeist'
 	gem 'factory_girl_rails'
+	gem 'debugger'
 end
 
 gem 'paperclip', github: 'thoughtbot/paperclip'
