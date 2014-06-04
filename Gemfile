@@ -48,6 +48,8 @@ group :production do
 	gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 end
 
+gem 'aws-sdk'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

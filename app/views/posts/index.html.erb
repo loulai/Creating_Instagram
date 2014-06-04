@@ -50,7 +50,7 @@
 
 					      <li class="list-group-item">
 					      <% if post.likes.any? {|l| l.user_id == current_user.id } %>
-					      	<%= link_to " ❤ #{post.likes.count}", post_like_path(post), method: :delete, class: 'like-btn' %>
+					      	<%= link_to " ❤ #{post.likes.count}", post_like_path(post, likes), method: :delete, class: 'like-btn' %>
 					      <% else %>
 					      		<%= link_to " ❤ #{post.likes.count}", post_likes_path(post), class: 'like-btn' %>
 					      <% end%>
@@ -68,7 +68,7 @@
 							      <li class="comment_display list-group-item">		   			
 						   				<span class="commenter"><%= comment.user.email %>:    </span> 
 						   					<%= comment.comment %>
-						   					<%= link_to "྾", post_comment_path(post, comment), method: :delete %>
+						   					<%= link_to '྾', post_comment_path(post, comment), method: :delete %>
 							      </li>
 					   			<%end%>						
 						 		<%end%>
