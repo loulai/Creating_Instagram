@@ -53,6 +53,10 @@ After a little Bootstrap magic (panels, panel lists, jumbrotron, columns, column
 
 ![](README_images/img/first_bootstrap.png)
 
+More Bootstrap: Larger jumborton, background color, navbar, photo centering, font coloring.
+
+![](README_images/img/second_bootstrap.png)
+
 Features
 ---
 Ideally, my version of Instagram will have all the features of the real Instagram. However, time and my current ability are limitations that filter what I *can* do from what I *want* to do.
