@@ -46,15 +46,15 @@ This application is deployed on Heroku. Click [here] to play with the better Ins
 Timeline
 ---
 
-Progression
-:------:
-This is what my Instagram looked like before Bootstrap:![](README_images/img/unstyled_instagram.png)
+This is what my Instagram looked like before Bootstrap:
+![](README_images/img/unstyled_instagram.png)
+
 
 After a little Bootstrap magic (panels, panel lists, jumbrotron, columns, column offsets etc.):
 ![](README_images/img/progression_one.png)
 
-More Bootstrap (Larger jumborton, background color, navbar, photo centering, font coloring) and features (likes, comments, deleting comments, hashtags, modals and more).
 
+More Bootstrap (Larger jumborton, background color, navbar, photo centering, font coloring) and features (likes, comments, deleting comments, hashtags, modals and more).
 ![](README_images/img/progression_two.png)
 
 Features
