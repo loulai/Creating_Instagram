@@ -53,7 +53,8 @@ After a little Bootstrap magic (panels, panel lists, jumbrotron, columns, column
 
 ![](README_images/img/progression_one.png)
 
-More Bootstrap: Larger jumborton, background color, navbar, photo centering, font coloring.
+More Bootstrap (Larger jumborton, background color, navbar, photo centering, font coloring)
+..and features (likes, comments, deleting comments, hashtags, modals and more).
 
 ![](README_images/img/progression_two.png)
 
