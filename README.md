@@ -61,7 +61,7 @@ Features
 ---
 Ideally, my version of Instagram will have all the features of the real Instagram. However, time and my current ability are limitations that filter what I *can* do from what I *want* to do.
 
-So I drew up this table that contains what I wish my Instagram has versus what I actually have. As I spend more time on this project and get more proficient at Rails, more features are added.
+So I drew up these tables to keep track of current features versus wish-list features. As I spend more time on this project and get more proficient at Rails, I will be updating this section to be concurrent with my application.
 
 
 Signing in: Current Features  | Wish-List Features
@@ -72,6 +72,8 @@ Must sign in with password |
 Comments: Current Features  | Wish-List Features
 :----------------:| :-----------------:
 Anyone can comment on a photo| Nicer looking input section
+OK looking input section | Instant change (websockets)
+Can be deleted |
 
 Hashtags: Current Features  | Wish-List Features
 :----------------:| :-----------------:
@@ -80,7 +82,7 @@ Displays a changing header on 'show' |
 
 Likes: Current Features  | Wish-List Features
 :----------------:| :-----------------:
-A user can like a photo | A user can like a photo once
+A user can like a photo | A user can like a photo only once
 Updates when clicked without page refresh| A user can unlike a photo
   | 'Like' button darkens upon liking
 
