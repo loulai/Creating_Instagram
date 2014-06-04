@@ -51,11 +51,11 @@ This is what my Instagram looked like before Bootstrap:
 
 After a little Bootstrap magic (panels, panel lists, jumbrotron, columns, column offsets etc.):
 
-![](README_images/img/first_bootstrap.png)
+![](README_images/img/progression_one.png)
 
 More Bootstrap: Larger jumborton, background color, navbar, photo centering, font coloring.
 
-![](README_images/img/second_bootstrap.png)
+![](README_images/img/progression_two.png)
 
 Features
 ---
