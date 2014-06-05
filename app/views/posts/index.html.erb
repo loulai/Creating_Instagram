@@ -36,7 +36,7 @@
 	<div class="all-posts">
 	 	<% @posts.each do |post| %>
 			<div class='row'>  	
-	 			<div class='col-md-2 col-md-offset-2'>
+	 			<div class='col-md-2 col-md-offset-1'>
 	 				<%= post.user.email %>
 	 			</div>
 	 			
@@ -44,7 +44,7 @@
 
 	 				<div class="panel panel-default">
 	  
-					  <div class="panel-heading"><%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %></div>
+					  <div class="panel-heading picture_panel"><%= image_tag post.picture.url(:medium), class: 'uploaded-picture' %></div>
 					  
 					  <div class="panel-body">
 					    <ul class="list-group">	
@@ -57,7 +57,7 @@
 					      <% end%>
 					      	| <%= link_to "Delete post", post_path(post), method: :delete %> 
 					      	| <%= link_to "Show more", '#', data: {toggle: 'modal', target: ".image-modal-#{post.id}"} %></li>
-					      <li class="list-group-item">
+					      <li class="list-group-item caption">
 					      	<%= post.caption %> 
 					        <% post.hashtags.each do |hashtag| %>
 					          <%= link_to hashtag.title, hashtag_path(hashtag) %>

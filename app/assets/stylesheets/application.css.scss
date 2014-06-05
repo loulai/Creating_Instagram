@@ -47,7 +47,8 @@
 
 .all-posts .panel {
 	background-color: rgb(221,222,223);
-	padding: 20px 32px;
+	width: 550px;
+	overflow: hidden;
 	border-style: solid;
 	border-width: 1.9px;
 	border-color: rgb(195,196,197);
@@ -72,14 +73,26 @@
 	color: #3F729B;
 }
 
-.panel-heading {
-	border:30px solid;
-}
 
 .liked_already {
 	color: #AF2D40
 }
 
+.uploaded-picture {
+	width: 100%;
+	height: 100%
+}
+
+.panel-heading.picture_panel {
+	background-color: #DDDEDF;
+}
+
+.list-group-item.caption {
+	border-style:solid;
+	border-width: 2px;
+	border-color: #D8D8D8;
+	background-color: #F7F7F7;
+}
 
 
 //--{general everything}--
@@ -100,12 +113,6 @@ body {
 	opacity: 1.0;
 }
 
-img {
- display: block;
- margin-left:auto;
- margin-right: auto;
- background-size:cover
-}
 
 
 
