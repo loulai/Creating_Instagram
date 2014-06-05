@@ -30,6 +30,7 @@
     <p><a class="btn btn-lg btn-success" href="posts/new" role="button">Post a Photo</a></p>
   </div>
 </div>
+
 <div class='container'>
 	<% if @posts.any? %>
 	<div class="all-posts">
@@ -39,7 +40,7 @@
 	 				<%= post.user.email %>
 	 			</div>
 	 			
-	 			<div class='col-md-5 post' data-id='<%= post.id %>'>
+	 			<div class='col-md-5 post' data-id="<%= post.id %>">
 
 	 				<div class="panel panel-default">
 	  
@@ -50,7 +51,7 @@
 
 					      <li class="list-group-item">
 					      <% if post.likes.any? {|l| l.user_id == current_user.id } %>
-					      	<%= link_to " ❤ #{post.likes.count}", post_like_path(post, likes), method: :delete, class: 'like-btn' %>
+					      	<span class="liked_already"><%=" ❤ #{post.likes.count}"%></span>
 					      <% else %>
 					      		<%= link_to " ❤ #{post.likes.count}", post_likes_path(post), class: 'like-btn' %>
 					      <% end%>
@@ -63,7 +64,7 @@
 					         <% end%>
 
 					      <% if post.comments.any? %>
-					       <li class="list-group-item"><%= post.comments.count %> comments</li>
+					       <li class="list-group-item comment_count"><%= pluralize(post.comments.count, 'comment') %></li>
 					   			<% post.comments.each do |comment| %>
 							      <li class="comment_display list-group-item">		   			
 						   				<span class="commenter"><%= comment.user.email %>:    </span> 

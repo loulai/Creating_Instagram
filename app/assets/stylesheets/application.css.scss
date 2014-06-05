@@ -68,11 +68,19 @@
 	color: #3F729B;
 }
 
-
+.panel-body .list-group-item .comment_count {
+	color: #3F729B;
+}
 
 .panel-heading {
 	border:30px solid;
 }
+
+.liked_already {
+	color: #AF2D40
+}
+
+
 
 //--{general everything}--
 
@@ -95,7 +103,8 @@ body {
 img {
  display: block;
  margin-left:auto;
- margin-right: auto
+ margin-right: auto;
+ background-size:cover
 }
 
 

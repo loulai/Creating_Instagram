@@ -9,4 +9,8 @@ class LikesController < ApplicationController
 		redirect_to '/posts'
 	end
 
+	def destroy
+	end
+
+
 end
