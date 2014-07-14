@@ -45,6 +45,41 @@ Feature         | Current Features                       | Wish-list Features
                 | Instant updates (websockets)           | A user can unlike a photo
                 | -                                      | 'Like' heart darkens upon liking
 
+Lougram in Development Mode
+===
+Lougram can be run in your localhost if you wish to play around with the code. You can do so easily by following these steps.
+
+First you'll need to clone this repo by typing this snippet into your terminal:
+```
+$ git clone git@github.com:loulai/Creating_Instagram.git
+```
+
+Then change into the newly cloned directory:
+```
+$ cd Creating_Instagram
+```
+
+Acquire the necessary gems to run Lougram:
+```
+$ bundle install
+```
+
+Update your database by running the migration:
+```
+$ bin/rake db:migrate
+```
+
+Run the application on your localhost (which defaults to port 3000):
+```
+$ bin/rails server
+```
+
+Finally, open up your web broswer, and in the URL field type: ``localhost:3000``
+
+Because you need to create an account to access the photo homepage, you'll be prompted to either sign up or login. Now your browser should look something like this:
+![Initial signin page](public/README_images/lougram_signin.png)
+
+
 Technologies Used
 ---
 * Cucumber
