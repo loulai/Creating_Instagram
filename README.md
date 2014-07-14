@@ -1,6 +1,6 @@
 Lougram
 ===
-Lougram is a two week project that replicates the basic functionality of Instagram. The primary goal of this project is not to clone Instagram with exact precision, but rather to emerge with a greater command of Rails, Ruby, Databases and a handful of select technologies. 
+Lougram is a two-week project that replicates the basic functionality of Instagram. The primary goal of this project is not to clone Instagram with exact precision, but rather to emerge with a greater command of Rails, Ruby, Databases and a handful of select technologies. 
 
 This is my third project using Rails. 
 
@@ -33,17 +33,17 @@ Ideally, Lougram will have all the features of the real Instagram. However, time
 So I drew up these tables to keep track of current features versus wish-list features. As I spend more time on this project and get more proficient at Rails, I will be updating this section so it's concurrent with my application.
 
 Feature         | Current Features                       | Wish-list Features
-:--------------:| :------------------------------------- |:-------------------------------------
+---------------:| :------------------------------------- |:-------------------------------------
 **Signing in**  | Must sign in with email                | Mandatory username when signing up
                 | Must sign in with password             | Username must be unique
 **Comments**    | Anyone can comment on a photo          | Nicer looking input section
                 | Adequate looking input section         | Instant update (websockets)
-                | Can be deleted                         |
-**Hashtags**    | Displays photos by hashtags            | 
-                | 'Show' page has changing header        | 
+                | Can be deleted                         | -
+**Hashtags**    | Displays photos by hashtags            | -
+                | 'Show' page has changing header        | -
 **Likes**       | Any user can like a photo              | A user can like a photo only once
                 | Instant updates (websockets)           | A user can unlike a photo
-                |                                        | 'Like' heart darkens upon liking
+                | -                                      | 'Like' heart darkens upon liking
 
 Technologies Used
 ---
