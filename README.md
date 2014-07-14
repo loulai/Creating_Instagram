@@ -77,7 +77,7 @@ $ bin/rails server
 Finally, open up your web broswer, and in the URL field type: ``localhost:3000``
 
 Because you need to create an account to access the photo homepage, you'll be prompted to either sign up or login. Now your browser should look something like this:
-![Initial signin page](README_images/lougram_signin.png)
+![Initial signin page](README_images/img/lougram_signin.png)
 
 
 Technologies Used
