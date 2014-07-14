@@ -33,7 +33,7 @@ Ideally, Lougram will have all the features of the real Instagram. However, time
 So I drew up these tables to keep track of current features versus wish-list features. As I spend more time on this project and get more proficient at Rails, I will be updating this section so it's concurrent with my application.
 
 Feature         | Current Features                       | Wish-list Features
-:--------------:| :-------------------------------------:|:-------------------------------------:
+:--------------:| :------------------------------------- |:-------------------------------------
 **Signing in**  | Must sign in with email                | Mandatory username when signing up
                 | Must sign in with password             | Username must be unique
 **Comments**    | Anyone can comment on a photo          | Nicer looking input section
