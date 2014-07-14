@@ -1,6 +1,6 @@
 Lougram
 ===
-Lougram is a two-week project that replicates the basic functionality of Instagram. The primary goal of this project is not to clone Instagram with exact precision, but rather to emerge with a greater command of Rails, Ruby, Databases and a handful of select technologies. 
+Lougram is a two-week project that replicates the basic functionality of Instagram. The primary goal of this project is not to clone Instagram with exact precision, but rather to emerge with a greater command of Rails, Ruby, Databases and a handful of new technologies. 
 
 This is my third project using Rails. 
 
@@ -76,8 +76,9 @@ $ bin/rails server
 
 Finally, open up your web broswer, and in the URL field type: ``localhost:3000``
 
-Because you need to create an account to access the photo homepage, you'll be prompted to either sign up or login. Now your browser should look something like this:
+Now your browser should look something like this:
 ![Initial signin page](README_images/img/sign_in.png)
+Because you need to create an account to access the photo homepage, you'll be prompted to either sign up or login. Happy Lougramming!
 
 
 Technologies Used
