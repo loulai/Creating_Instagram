@@ -34,14 +34,14 @@ So I drew up these tables to keep track of current features versus wish-list fea
 
 Feature        | Current Features                       | Wish-list Features
 :-------------:| :-------------------------------------:|:-------------------------------------:
-Signing in     | Must sign in with email                | Mandatory username when signing up
+*Signing in*   | Must sign in with email                | Mandatory username when signing up
                | Must sign in with password             | Username must be unique
-Comments       | Anyone can comment on a photo          | Nicer looking input section
+*Comments*     | Anyone can comment on a photo          | Nicer looking input section
                | Adequate looking input section         | Instant update (websockets)
                | Can be deleted                         |
-Hashtags       | Displays photos by hashtags            | 
+*Hashtags*     | Displays photos by hashtags            | 
                | 'Show' page has changing header        | 
-Likes          | Any user can like a photo              | A user can like a photo only once
+*Likes*        | Any user can like a photo              | A user can like a photo only once
                | Instant updates (websockets)           | A user can unlike a photo
                |                                        | 'Like' heart darkens upon liking
 
