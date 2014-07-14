@@ -22,7 +22,9 @@ end
 ActionController::Base.allow_rescue = false
 Cucumber::Rails::Database.javascript_strategy = :truncation
 Capybara.javascript_driver = :poltergeist
+
 Warden.test_mode! 
 World Warden::Test::Helpers
 After { Warden.test_reset! }
+
 World(FactoryGirl::Syntax::Methods)

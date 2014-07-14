@@ -14,3 +14,6 @@ class LikesController < ApplicationController
 
 
 end
+
+
+@listing.buyer.chatrooms.create(listing_id: @listing.id, buyer_id: @buyer.id)
