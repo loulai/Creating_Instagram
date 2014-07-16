@@ -70,6 +70,11 @@ When(/^I sign in with the sign in form$/) do
   click_button 'Sign in'
 end
 
+Given(/^No one has ever posted a photo on Lougram$/) do
+  expect(Post.all.count).to eq 0
+end
+
+
 
 
 
