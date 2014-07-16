@@ -4,11 +4,8 @@ Feature: Commenting on photos
 	I want to 'like' a photo
 
 Background: Making sure two photos are uploaded
-	When I sign in with the sign in form
-	And I visit the "posts" page
-	And I click "Post a Photo"
-	And I attach a photo
-	And I click "Create Post"
+  Given I am already signed in
+	And I upload two photos successfully
 
 @javascript
 Scenario: Liking a photo
