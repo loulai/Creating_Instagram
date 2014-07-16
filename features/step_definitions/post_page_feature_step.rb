@@ -10,7 +10,7 @@ end
 
 #--- querying path
 
-Then(/^I should be on the "(.*?)" page$/) do |page_name|
+Then(/^I should (?:be on|be redirected to) the "(.*?)" page$/) do |page_name|
   expect(current_path).to eq("/#{page_name}")
 end
 
