@@ -10,6 +10,11 @@ When(/^I (?:attach|upload) (?:a|one) photo$/) do
   attach_file("Picture", Rails.root.join("spec/images/alex_in_action.png"))
 end
 
+When(/^I upload one photo successfully$/) do
+  attach_file("Picture", Rails.root.join("spec/images/alex_in_action.png"))
+  click_button "Create Post"
+end
+
 Then(/^I should see my photo$/) do
   expect(page).to have_css("img.uploaded-picture")
 end

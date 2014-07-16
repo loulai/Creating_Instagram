@@ -14,6 +14,10 @@ Then(/^I should (?:be on|be redirected to) the "(.*?)" page$/) do |page_name|
   expect(current_path).to eq("/#{page_name}")
 end
 
+Then(/^I should be redirected to the homepage$/) do
+   expect(current_path).to eq '/posts'
+end
+
 Given(/^I am on the "(.*?)" page$/) do |page_name|
   expect(current_path).to eq("/#{page_name}")
 end

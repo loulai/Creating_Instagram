@@ -14,6 +14,6 @@ Scenario: visiting the posts page for the first time
 
 Scenario: seeing one post
 	When I click "Post a Photo"
-	And I upload one photo
+	And I upload one photo successfully
 	Then I should be redirected to the homepage
 	And I should see one photo
