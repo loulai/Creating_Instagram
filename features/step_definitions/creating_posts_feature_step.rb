@@ -15,7 +15,7 @@ When(/^I upload one photo successfully$/) do
   click_button "Create Post"
 end
 
-Then(/^I should see my photo$/) do
+Then(/^I should see (?:my|one) photo$/) do
   expect(page).to have_css("img.uploaded-picture")
 end
 
