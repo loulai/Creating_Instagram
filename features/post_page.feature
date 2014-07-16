@@ -13,3 +13,6 @@ Scenario: visiting the posts page for the first time
 	And I should find link "Post a Photo"
 
 Scenario: seeing one post
+	Given I upload one photo
+	And I am on the homepage
+	Then I should see one photo
