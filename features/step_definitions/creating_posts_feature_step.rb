@@ -6,7 +6,7 @@ end
 
 #-- photo stuff
 
-When(/^I attach a photo$/) do
+When(/^I (?:attach|upload) (?:a|one) photo$/) do
   attach_file("Picture", Rails.root.join("spec/images/alex_in_action.png"))
 end
 

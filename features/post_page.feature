@@ -8,11 +8,12 @@ Background: I am already signed in and on homepage
 	And I am on the homepage
 
 Scenario: visiting the posts page for the first time
-	Given No one has ever posted a photo on Lougram
+	When No one has ever posted a photo on Lougram
 	Then I should see "There are no posts yet"
 	And I should find link "Post a Photo"
 
 Scenario: seeing one post
-	Given I upload one photo
-	And I am on the homepage
-	Then I should see one photo
+	When I click "Post a Photo"
+	And I upload one photo
+	Then I should be redirected to the homepage
+	And I should see one photo
