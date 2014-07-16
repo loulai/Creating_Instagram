@@ -3,12 +3,9 @@ Feature: Adding hashtags to posts
 	As the user who posts the photos
 	I want to be able to add hastags in my caption
 
-Background: On the right page, with uploaded photo
-	When I sign in with the sign in form
-	And I visit the "posts" page
-	And I click "Post a Photo"
-	And I attach a photo
-	And I fill in the "Caption" area with "my cute new pet"
+Background: I am creating a new post
+	Given I am already signed in
+	And I visit the "posts/new" page
 
 Scenario: Writing a caption that includes hastags
 	When I fill in the "Hashtags" area with "cute, it's, fluffy"
