@@ -4,7 +4,7 @@ Then(/^I visit the "(.*?)" page$/) do |page_name|
   visit "/#{page_name}"
 end
 
-Given(/^I visit the homepage$/) do
+Given(/^I (?:am on|visit) the homepage$/) do
   visit '/'
 end
 
