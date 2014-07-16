@@ -21,3 +21,13 @@ end
 When(/^I wait (\d+) second$/) do |arg1|
 	sleep 2
 end
+
+Given(/^I upload two photos successfully$/) do
+	# .. with no caption or hashtags
+	visit "posts/new"
+  attach_file("Picture", Rails.root.join("spec/images/fluffy_puppies.png"))
+  click_button "Create Post"
+  visit "posts/new"
+  attach_file("Picture", Rails.root.join("spec/images/chipmunks.png"))
+  click_button "Create Post"
+end

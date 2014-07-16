@@ -1,8 +1,8 @@
 Lougram
 ===
-Lougram is a two-week project that replicates the basic functionality of Instagram. The primary goal of this project is not to clone Instagram with exact precision, but rather to emerge with a greater command of Rails, Ruby, Databases and a handful of new technologies. 
+Lougram is a two-week project that replicates the basic functionality of Instagram. The primary goal of this project is not to clone Instagram with exact precision, but rather to emerge with a greater command of Rails, Ruby, Databases and some select new technologies. 
 
-This is my third project using Rails. 
+This is my third project using Rails, and is the first time I've used Bootstrap.
 
 Testing
 ---
@@ -14,16 +14,17 @@ This application is deployed on Heroku. Click [here] to play with the better Ins
 
 Timeline
 ---
+As mentioned earlier, this is the first time I've used Bootstrap. I got really excited about it, so I created a timeline comparing Lougram pre-Bootstrap to post-Bootstrap. 
 
-This is what Lougram looked like before Bootstrap:
+Lougram, pre-Boostrap:
 ![](README_images/img/unstyled_instagram.png)
 
 
-After a little Bootstrap magic (panels, panel lists, jumbotron, columns, column offsets etc.):
+Post-Bootstrap magic (panels, panel lists, jumbotron, columns, column offsets etc.):
 ![](README_images/img/progression_one.png)
 
 
-More Bootstrap (expanded jumbotron, background color, navbar, photo centering, font coloring) and features (likes, comments, deleting comments, hashtags, modals and more).
+More Bootstrap! (expanded jumbotron, background color, navbar, photo centering, font coloring) and features (likes, comments, deleting comments, hashtags, modals and more):
 ![](README_images/img/progression_two.png)
 
 Features

@@ -39,6 +39,7 @@ Then(/^I should not find "(.*?)"$/) do |thing|
 end
 
 #--- clicking stuff
+
 When(/^I click the link "(.*?)"$/) do |link_name|
   first(:link, link_name).click
 end
@@ -50,7 +51,6 @@ When(/^I click "(.*?)"$/) do |clicky_name|
     first(:link, clicky_name).click
   end
 end
-
 
 #--- the user and logging in 
 
