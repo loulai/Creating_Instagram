@@ -1,12 +1,14 @@
 Lougram
 ===
-Lougram is a two-week project that replicates the basic functionality of Instagram. The primary goal of this project is not to clone Instagram with exact precision, but rather to emerge with a greater command of Rails, Ruby, Databases and some select new technologies. 
+Lougram is a two-week project that replicates the basic functionality of Instagram. The primary goal of this project is not to clone Instagram with exact precision, but rather to gain a greater command of Rails, Ruby, Databases and some select new technologies. 
 
-This is my third project using Rails, and is the first time I've used Bootstrap.
+This is my third project using Rails and the first time I've used Bootstrap.
 
 Testing
 ---
 This project is test driven. Integration testing is done with Cucumber and unit testing is done with Rspec.
+
+*Note: Although the features work the real situation, several cucumber steps are not passing due to an unresolved websockets issue.*
 
 Heroku
 ---
@@ -14,7 +16,7 @@ This application is deployed on Heroku. Click [here] to play with the better Ins
 
 Timeline
 ---
-As mentioned earlier, this is the first time I've used Bootstrap. I got really excited about it, so I created a timeline comparing Lougram pre-Bootstrap to post-Bootstrap. 
+As mentioned above, this is the first time I've used Bootstrap. I got really excited about it, so I created a timeline comparing Lougram pre-Bootstrap to post-Bootstrap. 
 
 Lougram, pre-Boostrap:
 ![](README_images/img/unstyled_instagram.png)
@@ -31,7 +33,10 @@ Features
 ---
 Ideally, Lougram will have all the features of the real Instagram. However, time and my current ability are limitations that filter what I can do from what I want to do.
 
-So I drew up these tables to keep track of current features versus wish-list features. As I spend more time on this project and get more proficient at Rails, I will be updating this section so it's concurrent with my application.
+So I drew up these tables to keep track of current features versus wish-list features. As I spend more time on this project and get more proficient at Rails, I'll be updating this section so it's concurrent with my application.
+
+*[August 2014] Note: I'm no longer working on Lougram, so the below table is final.*
+
 
 Feature         | Current Features                       | Wish-list Features
 ---------------:| :------------------------------------- |:-------------------------------------
@@ -67,7 +72,7 @@ $ bundle install
 
 Update your database by running the migration:
 ```
-$ bin/rake db:migrate
+$ bin/rake db:create db:migrate
 ```
 
 Run the application on your localhost (which defaults to port 3000):
@@ -79,7 +84,8 @@ Finally, open up your web broswer, and in the URL field type: ``localhost:3000``
 
 Now your browser should look something like this:
 ![Initial signin page](README_images/img/sign_in.png)
-Because you need to create an account to access the photo homepage, you'll be prompted to either sign up or login. Happy Lougramming!
+You'll be prompted to either sign up or login. You must create an account if you wish to access the meatier part of the application. A fake email will work fine (e.g. ``bananas@pyjamas.com``); it does not have to be real.
+Happy Lougramming!
 
 
 Technologies Used
